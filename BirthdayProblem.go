@@ -16,7 +16,7 @@ func main() {
   for chanceOfNoRepeat > (1.0 - percentage) {
     people += 1
     var tmp float64
-    tmp = float64((days-people+1) / days)
+    tmp = (days-people+1) / days
     //fmt.Println("tmp:", tmp)
     chanceOfNoRepeat = chanceOfNoRepeat * tmp
   }
